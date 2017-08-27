@@ -366,6 +366,16 @@ bittrex.getcandles({
 });
 ```
 
+##### getlatestcandle (v2 method)
+```javascript
+bittrex.getlatestcandle({
+  marketName: 'USDT-BTC',
+  tickInterval: 'fiveMin', // intervals are keywords
+}, function( data, err ) {
+  console.log( data );
+});
+```
+
 ##### getmarketsummaries
 ```javascript
 bittrex.getmarketsummaries( function( data, err ) {
